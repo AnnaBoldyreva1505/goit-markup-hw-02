@@ -22,92 +22,9 @@ body {
     list-style: none;
 }
 
+/*  ============= ALL PAGES STYLE=====================  */
 
-/* ============ HERO ====================== */
-
-.hero-header{
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--text-white);
-}
-.hero-btn{
-    font-family: inherit;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    color: var(--text-white);
-    background-color: #2196F3;
-    cursor: pointer;
-}
-.hero-btn:hover,
-.hero-btn:focus{
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.88;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.06em;
-    background-color: #188CE8;
-    color: var(--text-white);
-}
-
-/* ============ /HERO ====================== */
-
-
-/* ===============  values section =========== */
-.values-header{
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 1.1;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-.values-text{
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(--text-color-second);
-}
-    /* ===============  /values section =========== */
-
- /* =============== What do we do section/OUR TEAM SECTION ============== */
-.portfolio-header{
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-
-.our-team-names {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-}
-.our-team-position {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--text-color-second);
-}
-
-  /* ===============What do we do section/OUR TEAM SECTION ============== */
-
-/* ======================= HEADER ========================= */
+/* HEADER  */
 .logo-link {
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -129,12 +46,16 @@ body {
 }
 
 .menu-item-nav {
-    font-weight: 500; 
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.33;
     /*18 font-size/14 line-height=1.33 - лучше использовать множитель*/
     letter-spacing: 0.02em;
     color: inherit;
+}
+
+.menu-item-current {
+    color: var(--accent-color);
 }
 
 .menu-item-contact {
@@ -145,60 +66,25 @@ body {
     color: var(--text-color-second);
 }
 
-.menu-item-nav:hover, 
+.menu-item-nav:hover,
 .menu-item-nav:focus,
 .menu-item-contact:hover,
 .menu-item-contact:focus {
     color: var(--accent-color);
 }
 
-/* ====================== /HEADER ========================= */
+/* FOOTER */
 
-/* ============= NAVIGATION =========================== */
-.nav-btn {
-    font-family: inherit;;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    text-align: center;
-    letter-spacing: 0.03em;
-    cursor: pointer;
-}
-
-.nav-btn:hover,
-.nav-btn:focus {
-    color: var(--text-white);
-    background-color: var(--accent-color);
-}
-
-.nav-header{
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    letter-spacing: 0.06em;
-}
-
-.nav-paragraf{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: var(--text-color-second);
-}
-/* ============= /NAVIGATION BUTTONS=============== */
-
-/* ===================== FOOTER ==================== */
-
-.footer-address{
+.footer-address {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color:var(--text-white)
+    color: var(--text-white)
 }
 
-.footer-contact-mail{
+.footer-contact-mail {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -207,7 +93,7 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-phone-number{
+.footer-phone-number {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -222,7 +108,121 @@ body {
 .footer-contact-mail:focus,
 .footer-phone-number:focus,
 .footer-address:hover,
-.footer-address:focus{
+.footer-address:focus {
     color: var(--accent-color);
 }
-/* ===================== /FOOTER ===================== */
+
+/* SECTION TITLE */
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+/*  BUTTONS */
+
+.btn {
+    font-family: inherit;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn.hero {
+    font-weight: 700;
+    line-height: 1.88;
+    display: flex;
+    align-items: center letter-spacing: 0.06em;
+    color: var(--text-white);
+    background-color: #2196F3;
+}
+
+.btn.hero:hover,
+.btn.hero:focus {
+    background-color: #188CE8;
+    color: var(--text-white);
+}
+
+.btn.nav {
+    font-weight: 500;
+    line-height: 1.63;
+    letter-spacing: 0.03em;
+}
+
+.nav:hover,
+.nav:focus {
+    color: var(--text-white);
+    background-color: var(--accent-color);
+}
+
+
+/* =================== INDEX. HTML STYLES ========================*/
+
+/*  HERO TITLE (h1) */
+.hero-header {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+/* VALUES SECTION */
+.values-header {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.values-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color-second);
+}
+ /* WHAT DO WE DO/OUR TEAM SECTION  */
+
+.our-team-names {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.our-team-position {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--text-color-second);
+}
+
+
+/* =================== PORTFOLIO.HTML STYLES ========================*/
+
+/* NAVIGATION Portfolio */
+
+.portfolio-nav .header {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio-nav .paragraf {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--text-color-second);
+}
+

@@ -13,15 +13,15 @@
 </head>
 <body>
     <!-- Navigation -->
-    <header class="page-header">
-        <nav class="navigation">
+    <header>
+        <nav>
             <a class="link" href="index.html" lang="en"><span class="logo-link logo-link-first">Web</span><span class="logo-link logo-link-header">Studio</span> </a>
-            <ul class="list">
+            <ul class="menu-item list">
                 <li>
                     <a class="menu-item-nav link" href="index.html">Студия</a>
                 </li>
                 <li>
-                    <a class="menu-item-nav link" href="portfolio.html">Портфолио</a>
+                    <a class="menu-item-nav menu-item-current link" href="portfolio.html">Портфолио</a>
                 </li>
                 <li>
                     <a class="menu-item-nav link" href="">Контакты</a>
@@ -41,26 +41,27 @@
         <!-- main - для уникальной информации -->
     <main>
         <!-- filter section-->
-        <section>
+        <!-- <h1>Наши работы</h1> его на макете нет, пока не знаю как скрыть его в css -->
+        <section class="portfolio">
             <ul class="list">
                <li>
-                   <button class="nav-btn" type="button">Все</button>
+                   <button class="btn nav" type="button">Все</button>
                 </li>
                <li>
-                   <button class="nav-btn" type="button">Веб-сайты</button>
+                   <button class="btn nav" type="button">Веб-сайты</button>
                 </li>  
                <li>
-                   <button class="nav-btn" type="button">Приложения</button>
+                   <button class="btn nav" type="button">Приложения</button>
                 </li> 
                <li>
-                   <button class="nav-btn" type="button">Дизайн</button>
+                   <button class="btn nav" type="button">Дизайн</button>
                 </li> 
                <li>
-                   <button class="nav-btn" type="button">Маркетинг</button>
+                   <button class="btn nav" type="button">Маркетинг</button>
                 </li> 
             </ul>
 
-            <ul class="list">
+            <ul class="portfolio-nav list">
                 <li>
                     <a href="">   
                     <img 
@@ -68,8 +69,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Технокряк</h2>
-                    <p class="nav-paragraf">Веб-сайт</p>
+                    <h2 class="header">Технокряк</h2>
+                    <p class="paragraf">Веб-сайт</p>
                 </li>
                 <li>
                     <a href="">
@@ -78,8 +79,8 @@
                     width="370"
                      height="294" 
                      alt="Пример"></a>
-                    <h2 class="nav-header">Постер New Orlean vs Golden Star</h2>
-                    <p class="nav-paragraf">Дизайн</p>
+                    <h2 class="header">Постер New Orlean vs Golden Star</h2>
+                    <p class="paragraf">Дизайн</p>
                 </li>
                 <li>
                     <a href="">
@@ -88,8 +89,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Ресторан Seafood</h2>
-                    <p class="nav-paragraf">Приложение</p>
+                    <h2 class="header">Ресторан Seafood</h2>
+                    <p class="paragraf">Приложение</p>
                 </li>
                 <li>
                     <a href="">
@@ -98,8 +99,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Проект Prime</h2>
-                    <p class="nav-paragraf">Маркетинг</p>
+                    <h2 class="header">Проект Prime</h2>
+                    <p class="paragraf">Маркетинг</p>
                 </li>
                 <li>
                     <a href="">
@@ -108,8 +109,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Проект Boxes</h2>
-                    <p class="nav-paragraf">Приложение</p>
+                    <h2 class="header">Проект Boxes</h2>
+                    <p class="paragraf">Приложение</p>
                 </li>
                 <li>
                     <a href="">
@@ -118,8 +119,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Inspiration has no Borders</h2>
-                    <p class="nav-paragraf">Веб-сайт</p>
+                    <h2 class="header">Inspiration has no Borders</h2>
+                    <p class="paragraf">Веб-сайт</p>
                 </li>
                 <li>
                     <a href="">
@@ -128,8 +129,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Издание Limited Edition</h2>
-                    <p class="nav-paragraf">Дизайн</p>
+                    <h2 class="header">Издание Limited Edition</h2>
+                    <p class="paragraf">Дизайн</p>
                 </li>
                 <li>
                     <a href="">
@@ -138,8 +139,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Проект LAB</h2>
-                    <p class="nav-paragraf">Маркетинг</p>
+                    <h2 class="header">Проект LAB</h2>
+                    <p class="paragraf">Маркетинг</p>
                 </li>
                 <li>
                     <a href="">
@@ -148,8 +149,8 @@
                     width="370" 
                     height="294" 
                     alt="Пример"></a>
-                    <h2 class="nav-header">Growing Business</h2>
-                    <p class="nav-paragraf">Приложение</p>
+                    <h2 class="header">Growing Business</h2>
+                    <p class="paragraf">Приложение</p>
                 </li>
             </ul>
         </section>
@@ -168,6 +169,5 @@
                 <a class="footer-phone-number link" href="tel:+3809911111111">+38 099 111 11 11</a>        
             </address>
         </footer>
-    
-</body>
+    </body>
 </html>
