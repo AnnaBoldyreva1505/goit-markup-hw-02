@@ -22,6 +22,7 @@ body {
     list-style: none;
 }
 
+
 /* ============ HERO ====================== */
 
 .hero-header{
@@ -34,7 +35,7 @@ body {
     color: var(--text-white);
 }
 .hero-btn{
-    font-family: var(--primary-font);
+    font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -48,7 +49,6 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus{
-    font-family: var(--primary-font);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -120,20 +120,35 @@ body {
     color: var(--accent-color);
 }
 
-.logo-link-second {
+.logo-link-header {
     color: var(--text-black);
 }
 
-.menu-item {
-    font-weight: 500;
+.logo-link-footer {
+    color: var(--text-white);
+}
+
+.menu-item-nav {
+    font-weight: 500; 
     font-size: 14px;
     line-height: 1.33;
     /*18 font-size/14 line-height=1.33 - лучше использовать множитель*/
     letter-spacing: 0.02em;
+    color: inherit;
 }
 
-.menu-item:hover, 
-.menu-item:focus {
+.menu-item-contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color-second);
+}
+
+.menu-item-nav:hover, 
+.menu-item-nav:focus,
+.menu-item-contact:hover,
+.menu-item-contact:focus {
     color: var(--accent-color);
 }
 
@@ -141,7 +156,7 @@ body {
 
 /* ============= NAVIGATION =========================== */
 .nav-btn {
-    font-family: var(--primary-font);
+    font-family: inherit;;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -163,7 +178,7 @@ body {
     letter-spacing: 0.06em;
 }
 
-.nav-paragfaf{
+.nav-paragraf{
     font-weight: 400;
     font-size: 16px;
     line-height: 1.88;
