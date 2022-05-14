@@ -45,6 +45,10 @@ body {
     color: var(--text-white);
 }
 
+.menu{
+    background-color: #ffffff;
+}
+
 .menu-item-nav {
     font-weight: 500;
     font-size: 14px;
@@ -74,6 +78,9 @@ body {
 }
 
 /* FOOTER */
+.footer{
+    background-color: #2F303A;
+}
 
 .footer-address {
     font-style: normal;
@@ -121,13 +128,14 @@ body {
     letter-spacing: 0.03em;
 }
 
-/*  BUTTONS */
+/* ===================== BUTTONS========================= */
 
 .btn {
     font-family: inherit;
     font-size: 16px;
     text-align: center;
     cursor: pointer;
+    
 }
 
 .btn.hero {
@@ -161,6 +169,9 @@ body {
 /* =================== INDEX. HTML STYLES ========================*/
 
 /*  HERO TITLE (h1) */
+.hero {
+    background-color: #2F303A;
+}
 .hero-header {
     font-weight: 900;
     font-size: 44px;
@@ -172,6 +183,10 @@ body {
 }
 
 /* VALUES SECTION */
+.values{
+    background-color: #ffffff;
+}
+
 .values-header {
     font-size: 14px;
     font-weight: 700;
@@ -188,13 +203,19 @@ body {
     color: var(--text-color-second);
 }
  /* WHAT DO WE DO/OUR TEAM SECTION  */
-
+.our-specialty{
+background-color: #ffffff;
+}
 .our-team-names {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
     letter-spacing: 0.03em;
+}
+
+.our-team{
+background-color: #F5F4FA;
 }
 
 .our-team-position {
@@ -211,7 +232,12 @@ body {
 
 /* NAVIGATION Portfolio */
 
+.portfolio{
+    background-color: #ffffff;
+}
+
 .portfolio-nav .header {
+    color: var(--text-color-first);
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
